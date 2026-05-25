@@ -1,0 +1,17 @@
+Step to install django:
+1. intall python
+2. Follow command below:
+    python -m venv venv   
+    venv\Scripts\activate
+    pip install django
+    pip freeze > requirements.txt
+    & [Path\project\folder\location]\venv\Scripts\Activate.ps1
+    django-admin startproject [name_of_project] .
+    mkdir [name_of_project]/apps/
+    python manage.py startapp nama_apps server/apps/[name_of_apps]
+    python manage.py runserver
+3. create gitignore file
+4.PostgreSQL config:
+    user : postgres
+    pw : dev
+    port : 5432
