@@ -1,18 +1,16 @@
-[project]
-name = "remotech"
+[tool.poetry]
+name = "My App"
 version = "0.1.0"
 description = "Remote Challenge - Web based learning system with gamification"
-authors = [
-    {name = "Fauzan Hidayat",email = "fauzanhidayat679@gmail.com"}
-]
+authors = ["Fauzan Hidayat <fauzanhidayat679@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "django (>=6.0.5,<7.0.0)",
-    "psycopg2-binary (>=2.9.10,<3.0.0)",
-    "python-decouple (>=3.8,<4.0)"
-]
+packages = [{include = "server"}]
 
+[tool.poetry.dependencies]
+python = ">=3.12"
+django = ">=6.0.5,<7.0.0"
+psycopg2-binary = ">=2.9.10,<3.0.0"
+python-decouple = ">=3.8,<4.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
